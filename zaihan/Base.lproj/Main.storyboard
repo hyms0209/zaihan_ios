@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GeD-tT-Lpx">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hnz-er-is0">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="GeD-tT-Lpx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZCy-pV-Fpz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="upS-IP-vvH" kind="relationship" relationship="rootViewController" id="Wgu-Pe-d8Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZQ-e1-0ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1346" y="2"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="AaG-WX-Cqa">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="upS-IP-vvH" customClass="SplashVC" customModule="zaihan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6I-Zm-e27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r_a_splash" translatesAutoresizingMaskIntoConstraints="NO" id="cOR-33-Zrz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n70-kT-k4U"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cOR-33-Zrz" secondAttribute="trailing" id="ALT-ZK-WKn"/>
+                            <constraint firstItem="cOR-33-Zrz" firstAttribute="leading" secondItem="q6I-Zm-e27" secondAttribute="leading" id="aHx-aF-rrA"/>
+                            <constraint firstAttribute="bottom" secondItem="cOR-33-Zrz" secondAttribute="bottom" id="ggl-o9-o6m"/>
+                            <constraint firstItem="cOR-33-Zrz" firstAttribute="top" secondItem="q6I-Zm-e27" secondAttribute="top" id="hsi-h9-YSn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ah-bC-a3J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSf-xG-rJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-545" y="1"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="Ef2-WO-1Xz">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GXx-Oe-0pi" customClass="MainVC" customModule="zaihan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXM-46-OiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q8w-ow-ypx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPD-tD-rIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="r_a_splash" width="360" height="640"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
